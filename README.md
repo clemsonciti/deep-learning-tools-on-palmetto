@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Deep Learning Tools on Palmetto Cluster](#deep-learning-tools-on-palmetto-cluster)
+  - [Requesting nodes with GPUs](#requesting-nodes-with-gpus)
+  - [The `deep-learning` module](#the-deep-learning-module)
+  - [Tensorflow](#tensorflow)
+  - [Caffe](#caffe)
+  - [DIGITS](#digits)
+    - [Starting the DIGITS server](#starting-the-digits-server)
+    - [Port-forwarding from compute node to local machine](#port-forwarding-from-compute-node-to-local-machine)
+      - [Mac OS X or Linux](#mac-os-x-or-linux)
+      - [Windows](#windows)
+  - [Tensorflow and Caffe from Jupyter Notebooks](#tensorflow-and-caffe-from-jupyter-notebooks)
+    - [Configuring the Notebook Kernel](#configuring-the-notebook-kernel)
+    - [Running the Notebook Server and creating/editing Notebooks:](#running-the-notebook-server-and-creatingediting-notebooks)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Deep Learning Tools on Palmetto Cluster
 
 This document aims to explain the different
