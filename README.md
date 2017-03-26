@@ -108,6 +108,8 @@ This is the NVIDIA flavor of caffe (https://github.com/NVIDIA/caffe) version 0.1
 
 ## DIGITS
 
+### MAC OS X/Linux
+
 Using DIGITS is a two-step process:
 
 1. Starting the DIGITS server on the compute node
@@ -131,8 +133,6 @@ atrikut@node1689 ~]$ digits-devserver -p 5001
 
 ### Port-forwarding from compute node to local machine
 
-#### Mac OS X or Linux
-
 Open a Terminal on the local machine,
 and type in the following command:
 
@@ -147,9 +147,32 @@ In the above command, replace
 3. `5000` with the port number used above. If you didn't use a different port number,
 then leave as `5000`.
 
-#### Windows
+### Windows
 
-*Instructions coming soon...*
+On Windows, there are issues with the recommended SSH Client and port-forwarding,
+so instead, users will start the DIGITS server on the compute node,
+and also run Firefox on the compute node using X11 tunneling:
+
+1. Download and launch the Xming X server. See instructions
+[here](https://www.palmetto.clemson.edu/palmetto/beta/pages/userguide/howtos/run_graphical_applications.html).
+
+2. Start the SSH Secure Shell Client. Go to Tools->Settings->Tunneling,
+and ensure that the "Tunnel X11 Connections" box is checked.
+
+3. Log in to Palmetto and request an interactive session on a GPU node.
+
+4. Start the DIGITS server runnning in the background:
+
+~~~
+atrikut@node1689 ~]$ module add deep-learning
+atrikut@node1689 ~]$ digits-devserver&
+~~~
+
+Then run `firefox`:
+
+~~~
+atrikut@node1689 ~]$ firefox
+~~~
 
 ## Tensorflow and Caffe from Jupyter Notebooks
 
