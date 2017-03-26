@@ -146,6 +146,12 @@ In the above command, replace
 2. `<username`> with your Palmetto user name
 3. `5000` with the port number used above. If you didn't use a different port number,
 then leave as `5000`.
+4. Open a web browser locally, and go to `http://localhost:10000`. You should
+see the DIGITS interface.
+
+
+**Note**: I've noticed that doing this a second time can cause problems sometimes.
+It may help to change the local port (to e.g., 10001).
 
 ### Windows
 
