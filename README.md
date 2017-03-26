@@ -9,8 +9,8 @@
   - [Caffe](#caffe)
   - [DIGITS](#digits)
     - [MAC OS X/Linux](#mac-os-xlinux)
-    - [Starting the DIGITS server](#starting-the-digits-server)
-    - [Port-forwarding from compute node to local machine](#port-forwarding-from-compute-node-to-local-machine)
+      - [Starting the DIGITS server](#starting-the-digits-server)
+      - [Port-forwarding from compute node to local machine](#port-forwarding-from-compute-node-to-local-machine)
     - [Windows](#windows)
   - [Tensorflow and Caffe from Jupyter Notebooks](#tensorflow-and-caffe-from-jupyter-notebooks)
     - [Configuring the Notebook Kernel](#configuring-the-notebook-kernel)
@@ -115,7 +115,7 @@ Using DIGITS is a two-step process:
 1. Starting the DIGITS server on the compute node
 2. Binding a port on the local machine to the port on the compute node where the DIGITS server is running
 
-### Starting the DIGITS server
+#### Starting the DIGITS server
 
 A DIGITS server can be started on this compute node using the following command:
 
@@ -131,7 +131,7 @@ atrikut@node1689 ~]$ digits-devserver -p 5001
 
 (or any other number between 5001-6000)
 
-### Port-forwarding from compute node to local machine
+#### Port-forwarding from compute node to local machine
 
 Open a Terminal on the local machine,
 and type in the following command:
