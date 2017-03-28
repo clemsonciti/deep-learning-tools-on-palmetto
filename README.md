@@ -1,3 +1,18 @@
+** Important **: Using Caffe, Tensorflow or other Deep Learning tools on Palmetto
+requires you to be part of the `singularity` group on the cluster. You can check
+if you are part of the `singularity` group by logging in and running the `groups`
+command:
+
+~~~
+[atrikut@user001 ~]$ groups
+cuuser singularity
+~~~
+
+If you don't see `singularity` in the output of the `groups` command, you are not
+part of the `singularity` user group. Please contact <ithelp@clemson.edu>
+and include the word "Palmetto" in the subject line with a request to be added
+to the `singularity` group.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
