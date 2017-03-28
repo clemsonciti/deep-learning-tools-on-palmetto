@@ -1,4 +1,4 @@
-** Important **: Using Caffe, Tensorflow or other Deep Learning tools on Palmetto
+**Important**: Using Caffe, Tensorflow or other Deep Learning tools on Palmetto
 requires you to be part of the `singularity` group on the cluster. You can check
 if you are part of the `singularity` group by logging in and running the `groups`
 command:
